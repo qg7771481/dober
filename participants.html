@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Info Table</title>
+</head>
+<body>
+<h1>Info Table</h1>
+<style>
+  table, tn , tb {
+  border: 1px solid black;
+  }
+</style>
+<table style="width:100">
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Ingridients</th>
+  </tr>
+  {% for pizza in data %}
+  <tr>
+    <th>{{  pizza[0]}}  </th>
+    <th>{{  pizza[1]}}  </th>
+    <th>{{  pizza[2]}}  </th>
+
+
+  </tr>
+  {% endfor %}
+</table>
+<button onclick="window.location.href='{{ url_for('get_join') }}'">Створити нову піцу</button>
+
+</body>
+</html>

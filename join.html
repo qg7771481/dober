@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join Form</title>
+</head>
+<body>
+<h1>Join form</h1>
+<label>Enter Name of the pizza:</label>
+<form method="POST" action="{{ url_for('post_join') }}">
+  <input type="text" name="name" placeholder="Enter ur name of the pizza"> <br>
+
+  <label>Enter price:</label>
+  <input type="number" name="price" placeholder="Enter ur price"> <br>
+
+  <label>Enter ingridiens:</label>
+  <input type="text" name="ingridients" placeholder="Enter ur ingridients"> <br>
+
+  <button type="submit">Create Pizza</button>
+</form>
+
+</body>
+</html>

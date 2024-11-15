@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Страница про нас
+{% end block %}
+<div class="container mt-5">
+	<h1>ДОбавление статьи</h1>
+	<form method="post">
+		<input type="text" name="title" id="title" class="form-control" placeholder="Enter name"><br>
+		<textarea name="intro" id="intro" class="form-control" placeholder="Enter anons"></textarea><br>
+		<textarea name="text" id="text" class="form-control" placeholder="Enter text"></textarea><br>
+		<input name="submit" class="btn btn-success" value="Send">
+	</form>
+</div>
+{% endblock %}
